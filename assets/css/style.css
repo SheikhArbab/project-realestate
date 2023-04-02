@@ -754,7 +754,7 @@ display: block;
         }
            .btns .btn{
                width: 60px;
-               padding: 2px 0px;
+               padding: 2px 0px !important;
                display: flex;
                align-items: center;
                justify-content: center;
@@ -762,7 +762,7 @@ display: block;
                margin-left: 4px;
         }
            .btns .btn a{
-            font-size: 10px;
+            font-size: 10px !important;
         }
         .card-wrapper{
             display: flex;
