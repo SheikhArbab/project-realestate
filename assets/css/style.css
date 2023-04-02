@@ -708,11 +708,9 @@ display: block;
        display: none;
     }
     .hero-btn-wrapper .hero-btn{
-        margin-right: 8px;
-        margin-top: 8px;
-        text-transform: uppercase;
-        padding: 6px 10px;
-        width: 40%;
+        padding: 6px 18px;
+        width: fit-content !important;
+        text-transform: capitalize !important;
         font-size: 0.3rem !important;
     }
     .content-box {
@@ -769,9 +767,6 @@ display: block;
             flex-wrap: wrap;
             width: 95% !important;
             margin: 0 auto
-        }
-        .hero-btn-wrapper .hero-btn{
-            font-size: 6px;
         }
         .f-b-i-c{
             width: 100% !important;
