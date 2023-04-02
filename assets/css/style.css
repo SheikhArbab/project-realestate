@@ -552,11 +552,170 @@ width: 100%;
 
 /* ----------------------main-body------------------- */
 /* ----------------------main-footer------------------- */
+.section-team{
+    margin-bottom: 36px;
+}
+.team-content{
+    margin: 0 12px;
+    width: 2400px;
+}
+.team-content>h5{
+    margin: 6px 0;
+}
+.team-content>p{
+    margin-top: 6px;
+}
 
+.team-box{
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+}
+.team-pro{
+    width: 800px;
+    height: 220px;
+    box-shadow: 1px 1px 2px rgb(142, 142, 142);
+}
+.team-content-bottom{
+   display: flex;
+   align-items: center;
+   justify-content: start;
+margin-top: 6%;
+}
+.team-search{
+    display: flex;
+    align-items: center;
+}
+.team-search>input{
+    outline: none;
+    width: 150px;
+    height: 24px;
+    border: none;
+    box-shadow: 1px 1px 1px black;
+}
+.team-search .material-symbols-outlined{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    background-color: var(--primaryGreen);
+    height: 24px;
+    width: 50px;
+    box-shadow: 1px 1px 1px black;
+    cursor: pointer;
+}
+.team-content-bottom>ul{
+   display: flex;
+   width: 26%;
+   justify-content: space-between;
 
+}
+.team-content-bottom>ul>li>.t-s-i{
+    width: 70%;
+    position: relative;
+    border-radius: 50%;
+}
+.team-content-bottom>ul>li>.t-s-i:hover .t-s-i-e{
+  display: block;
+}
+.team-content-bottom>ul>li{
+    width: 70%;
+    position: relative;
+}
 
-
-
+.team-content-bottom>ul>li>.t-s-i>img{
+width: 100%;
+}
+.t-s-i-e{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: none;
+    transition: 0.9s;
+}
+.team-avatar>ul{
+    width: 100%;
+}
+.team-avatar>ul li{
+    margin: 12px;
+    background-color: #1501b0;
+    border-radius: 30px;
+}
+.t-a-i-c{
+    width: 70px;
+    position: relative;
+}
+.t-a-i-c-2{
+    width: 70px;
+    position: relative;
+}
+.t-a-i-c-3{
+    width: 70px;
+    position: relative;
+}
+.t-a-i-c:hover .profile{
+    display: block;
+}
+.t-a-i-c-2:hover .profile-2{
+    display: block;
+}
+.t-a-i-c-3:hover .profile-3{
+    display: block;
+}
+.t-a-i-c>.outline{
+    opacity: 0.5;
+width: 100%;
+}
+.t-a-i-c-2>.outline{
+    opacity: 0.5;
+width: 100%;
+}
+.t-a-i-c-3>.outline{
+    opacity: 0.5;
+width: 100%;
+}
+.profile{
+    width:200%;
+}
+.profile-2{
+    width:200%;
+}
+.profile-3{
+    width:230%;
+}
+.t-a-i-c>.profile{
+  position: absolute;
+  top: 10%;
+  display: none;
+  transition: 0.4s;
+  left: -1000%;
+}
+.t-a-i-c-2>.profile-2{
+  position: absolute;
+  bottom  : -74px;
+  display: none;
+  transition: 0.4s;
+  left: -1000%;
+}
+.t-a-i-c-3>.profile-3{
+  position: absolute;
+  bottom  : -0px;
+  display: none;
+  transition: 0.4s;
+  left: -1020%;
+}
+.t-a-i-c>.outline:hover{
+    opacity: 1;
+    transition: 0.4s;
+}
+.t-a-i-c-2>.outline:hover{
+    opacity: 1;
+    transition: 0.4s;
+}
+.t-a-i-c-3>.outline:hover{
+    opacity: 1;
+    transition: 0.4s;
+}
 
 /* ----------------------main-footer------------------- */
 
