@@ -426,7 +426,7 @@ form .form-btn>a {
     display: block;
     width: 40px;
     height: 40px;
-    background-image: url(../imgs/products-icons/gears.png);
+    background-image: url(../imgs/products-icons/link.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -521,7 +521,50 @@ form .form-btn>a {
     right: 2px;
 }
 
+.working{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #59b001;
+}
+.working>img{
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+}
 
+.to-top {
+    position: fixed;
+    background-color: var(--primaryGreen);
+    width: fit-content;
+    height: fit-content;
+    right: 32px;
+    bottom: 100px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 12px;
+
+}
+.to-top:hover{
+    background-color: var(--secondaryGreen);
+    box-shadow: 1px 1px 3px black;
+}
+
+.to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+.arrow{
+    width: 20px;
+    margin-right: 6px;
+}
 
 
 
@@ -839,6 +882,8 @@ form .form-btn>a {
 .t-a-i-c-3>.outline:hover {
     opacity: 1;
     transition: 0.4s;
+
+  
 }
 
 /* ----------------------main-footer------------------- */
@@ -868,7 +913,7 @@ form .form-btn>a {
     border-radius: 50%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(../imgs/products-icons/gears.png);
+    background-image: url(../imgs/products-icons/link.png);
     z-index: 1111;
     transform: translate(-505 -50%);
     top: 48%;
