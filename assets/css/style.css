@@ -15,8 +15,13 @@
     outline: none;
 }
 
-body {
+html
+{
 
+    scroll-behavior: smooth;
+}
+
+body {
     overflow: hidden;
     overflow-y: auto;
 }
@@ -78,6 +83,7 @@ body {
 
 .top-navbar {
     background-color: var(--primaryGreen);
+    padding: .4em 0;
 }
 
 .inner-top-navbar {
@@ -124,61 +130,6 @@ body {
 
 .inner-top-navbar>ul>li>a>figure>img {
     width: 100%;
-}
-
-.primary-navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 12px 0;
-    align-items: center;
-}
-
-.primary-navbar ul {
-    display: flex;
-}
-
-.primary-navbar ul li {
-    margin-left: 12px;
-    position: relative;
-}
-
-.primary-navbar ul li::after {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    width: 0%;
-    height: 3px;
-    border-radius: 25px;
-    background-color: var(--primaryGreen);
-    left: 0%;
-    bottom: -8px;
-    transition: 0.5s;
-}
-
-.primary-navbar ul li:hover::after {
-    width: 100%;
-}
-
-
-.primary-navbar ul li a {
-    text-transform: uppercase;
-    color: var(--black);
-}
-
-.primary-navbar ul li a:hover {
-    color: var(--primaryGreen);
-}
-
-.primary-navbar .logo {
-    width: 100px;
-}
-
-.primary-navbar .logo img {
-    width: 100%;
-}
-
-.md-primary-navbar {
-    display: none;
 }
 
 
@@ -358,11 +309,54 @@ form .form-btn>a {
     font-size: 14px;
     font-weight: 100px;
 }
+#menu{
+    display: none;
+}
+
+
+.primary-navbar > .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.primary-navbar > .container > ul{
+    display: flex !important;
+    align-items: center;
+    height: fit-content !important;
+    justify-content: space-between;
+}
+.primary-navbar > .container > ul li{
+  margin-left: .6em;
+}
+.primary-navbar > .container > ul li a{
+  color: black;
+  text-transform: uppercase;
+  transition: all .3s  ease;
+}
+.primary-navbar > .container > ul li a:hover{
+  color: var(--primaryGreen);
+}
+.nava{
+  color: var(--primaryGreen) !important;
+}
+.primary-navbar-m{
+    display: none;
+}
+.logo{
+    width: 100px;
+}
+
+.logo > img{
+    width: 100px;
+}
 
 .btns {
     display: flex;
     width: fit-content;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .btns .btn {
@@ -382,17 +376,17 @@ form .form-btn>a {
 .btns .btn:hover {
     border: 1px solid var(--primaryGreen);
     background-color: var(--primaryGreen);
-}
-
-.btns .btn:hover  {
     color: var(--white);
 }
+
+
 
 /* ------------------------card-------------------- */
 
 .card-wrapper {
     display: flex;
     flex-wrap: wrap;
+    cursor: pointer;
 }
 
 .card {
@@ -902,6 +896,7 @@ form .form-btn>a {
     height: 25%;
     background-color: var(--black);
     position: relative;
+    cursor: pointer;
 }
 
 .f-b-i-c::before {
@@ -1005,6 +1000,322 @@ form .form-btn>a {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------@media-------------------- */
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .top-navbar {
+        display: none;
+    }
+
+    .sm-top-navbar {
+        display: block;
+    }
+
+    .hero {
+        width: 100%;
+        height: 200px;
+        position: relative;
+    }
+
+    .hero-content {
+        top: 0%;
+        right: 10px;
+        width: 50%;
+    }
+
+    .hero-content h1 {
+        font-size: 18px;
+    }
+
+    .hero-content h3 {
+        font-size: 8px;
+    }
+
+    .hero-content p {
+        display: none;
+    }
+
+    .hero-btn-wrapper .hero-btn {
+        padding: 6px 18px;
+        width: fit-content !important;
+        text-transform: capitalize !important;
+        font-size: 0.3rem !important;
+    }
+
+    .content-box {
+        padding-left: 0%;
+        padding-right: 0;
+    }
+
+    .content-box h2 {
+        font-size: 1rem
+    }
+
+    .content-box p {
+        font-size: 1rem
+    }
+
+    .main-forms .find {
+        width: fit-content;
+        height: 20px;
+        padding: 12px 8px;
+    }
+
+    .line {
+        display: flex;
+        margin: 0% auto;
+        width: 80%;
+    }
+
+    .content-box p {
+        display: none;
+    }
+
+    .line-c {
+        width: 800px !important;
+    }
+
+    .r-i {
+        width: 15px;
+        margin: 0 auto;
+    }
+
+    .rating-container>ul>li h4 {
+        font-size: 10px !important;
+    }
+
+    .btns {
+        width: fit-content;
+    }
+
+    .btns .btn {
+        width: 60px;
+        padding: 2px 0px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        margin-left: 4px;
+    }
+
+    .btns .btn {
+        font-size: 10px !important;
+    }
+
+    .card-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        width: 95% !important;
+        margin: 0 auto
+    }
+
+    .f-b-i-c {
+        width: 100% !important;
+        height: 40% !important;
+    }
+
+    .card-wrapper {
+        display: block !important;
+        width: 98% !important;
+        margin: 0 auto;
+    }
+
+    .card {
+        box-shadow: 2px 1px 2px grey, inset 1px 1px 1px grey;
+        margin: 8px;
+        width: 100% !important;
+        margin: 0 auto !important;
+        margin-top: 24px !important;
+    }
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    
+
+
+
+    .primary-navbar{
+    display: none;
+    }
+    #menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        padding-top: 10px;
+    }
+
+.primary-navbar-m{
+    background-color: white;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row-reverse;
+justify-content: space-between;
+padding: 2em 0;
+    position: relative;
+    z-index: 1111;
+    left: 0;
+}
+.primary-navbar-m .container {
+   margin: 0;
+
+}
+.primary-navbar-m .container ul {
+   display: none;
+
+}
+.primary-navbar-m .container ul li{
+   margin-top: 1em;
+
+}
+.primary-navbar-m .container ul li a{
+color: black;
+transition: all .3s ease;
+text-transform: uppercase;
+}
+.primary-navbar-m .container ul li a:hover{
+color: var(--primaryGreen);
+}
+
+
+
+    .hero-content h1 {
+        color: var(--white);
+        text-transform: uppercase;
+        word-spacing: 6px;
+
+    }
+
+    .hero-content {
+        top: 30%;
+        left: 15px !important;
+        width: fit-content !important;
+    }
+
+    form {
+        display: block;
+    }
+
+    form .dropdown {
+        width: calc(100% - 24px);
+
+    }
+
+    .line {
+        display: flex;
+        margin: 0% auto;
+        width: 50%;
+    }
+
+    .rating-container>ul li h3 {
+        display: none;
+    }
+
+    .content-box {
+        width: 80%;
+    }
+
+    .f-b-i-c {
+        width: 50%;
+        height: 30%;
+    }
+
+    .card-wrapper {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .card {
+        box-shadow: 2px 1px 2px grey, inset 1px 1px 1px grey;
+        margin: 8px;
+        width: 100% !important;
+        margin: 0 auto !important;
+        margin-top: 24px !important;
+    }
+
+}
+
+
+
+
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .line-c {
+        width: 500px;
+    }
+
+    .card-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto
+    }
+
+    .card {
+        box-shadow: 2px 1px 2px grey, inset 1px 1px 1px grey;
+        margin: 8px;
+        width: 48%;
+        margin-top: 24px !important;
+    }
+
+    .section-team {
+        display: none;
+    }
+}
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .line-c {
+        width: 300px;
+    }
+}
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+    .line {
+        display: flex;
+        margin: 0% auto;
+        width: 50%;
+    }
+
+    .hero-content {
+        width: 500px;
+        height: max-content;
+        position: absolute;
+        inset: 0;
+        z-index: 11;
+        top: 30%;
+        left: 100px;
+    }
+
+    .card-wrapper .card {
+        width: calc(33.33% - 20px);
+    }
+}
+
+
+/* -------------------------@media-------------------- */
 
 
 

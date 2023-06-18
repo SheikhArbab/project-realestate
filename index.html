@@ -12,8 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-        <link rel="icon" href="./assets/imgs/favicon/favicon-32x32.png" type="image" >
-        <link rel="stylesheet" href="./assets/css/@media.css">
+    <link rel="icon" href="./assets/imgs/favicon/favicon-32x32.png" type="image">
+    <link rel="stylesheet" href="./assets/css/@media.css">
 </head>
 
 <body>
@@ -91,25 +91,76 @@
             <div class="primary-navbar-wrapper">
                 <div class="container">
                     <div class="primary-navbar">
-                        <figure class="logo"><img src="./assets/imgs/logo/logo.png" alt=""></figure>
-                        <ul>
-                            <li><a id="home_active" href="./index.html">home</a></li>
-                            <li><a href="./propertise.html">propertise</a></li>
-                            <li><a  href="./team.html">team</a></li>
-                            <li><a  href="./about.html">about</a></li>
-                            <li><a  href="./project.html">project</a></li>
-                            <li><a  href="./blog.html">blog </a></li>
-                            <li><a  href="./contact.html">contact</a></li>
-                        </ul>
-                    </div><!--primary-navbar-->
-                    <div class="primary-navbar md-primary-navbar">
-                        <figure class="logo"><img src="./assets/imgs/logo/logo.png" alt=""></figure>
-                        <ul>
-                            <li><a href="#"><span class="material-symbols-outlined">
-                                        menu
-                                    </span></a></li>
 
-                        </ul>
+                    
+                        <div class="container">
+
+                            <a href="./index.html" class="logo">
+                                <img src="./assets/imgs/logo/logo.png" alt="">
+                            </a>
+
+                            <ul>
+                                <li>
+                                    <a class="nava" href="./index.html">home</a>
+                                </li>
+                                <li>
+                                    <a href="./about.html">about</a>
+                                </li>
+                                <li>
+                                    <a href="./blog.html">blog</a>
+                                </li>
+                                <li>
+                                    <a href="./contact.html">contact</a>
+                                </li>
+                                <li>
+                                    <a href="./project.html">project</a>
+                                </li>
+                                <li>
+                                    <a href="./propertise.html">propertise</a>
+                                </li>
+                                <li>
+                                    <a href="./team.html">team</a>
+                                </li>
+                            </ul>
+
+                        </div><!--container-->
+                    </div><!--md-primary-navbar-->
+                    <div class="primary-navbar-m">
+
+                        <span class="material-symbols-outlined" id="menu">
+                            menu
+                        </span>
+                        <div class="container">
+
+                            <a href="./index.html" class="logo">
+                                <img src="./assets/imgs/logo/logo.png" alt="">
+                            </a>
+
+                            <ul>
+                                <li>
+                                    <a href="./index.html">home</a>
+                                </li>
+                                <li>
+                                    <a href="./about.html">about</a>
+                                </li>
+                                <li>
+                                    <a href="./blog.html">blog</a>
+                                </li>
+                                <li>
+                                    <a href="./contact.html">contact</a>
+                                </li>
+                                <li>
+                                    <a href="./project.html">project</a>
+                                </li>
+                                <li>
+                                    <a href="./propertise.html">propertise</a>
+                                </li>
+                                <li>
+                                    <a href="./team.html">team</a>
+                                </li>
+                            </ul>
+
+                        </div><!--container-->
                     </div><!--md-primary-navbar-->
                 </div><!--container-->
             </div><!--primary-navbar-wrapper-->
@@ -221,13 +272,13 @@
 
                 </div><!--content-box-->
                 <div class="btns">
-                    <a class="btn" href="">all
-                    <a class="btn" href="">for rent</a>
-                    <a class="btn" href="">for sale</a>
+                    <a class="btn filter-button "  data-filter="all" >all </a>
+                        <a class="btn filter-button"  data-filter="category1" >for rent</a>
+                        <a class="btn filter-button"  data-filter="category2" >for rent</a>
                 </div><!--btns-->
                 <div class="container">
                     <div class="card-wrapper">
-                        <div class="card">
+                        <div class="card category-item all category1">
                             <figure class="c-i-c">
                                 <img class="c-i" src="./assets/imgs/products/pro-1.jpg" alt="">
                             </figure>
@@ -262,7 +313,7 @@
                                 </ul>
                             </div><!--card-footer-->
                         </div><!--card-->
-                        <div class="card">
+                        <div class="card category-item all category2">
                             <figure class="c-i-c">
                                 <img class="c-i" src="./assets/imgs/products/pro-2.jpg" alt="">
                             </figure>
@@ -297,7 +348,7 @@
                                 </ul>
                             </div><!--card-footer-->
                         </div><!--card-->
-                        <div class="card">
+                        <div class="card category-item all category1">
                             <figure class="c-i-c">
                                 <img class="c-i" src="./assets/imgs/products/pro-3.jpg" alt="">
                             </figure>
@@ -332,7 +383,7 @@
                                 </ul>
                             </div><!--card-footer-->
                         </div><!--card-->
-                        <div class="card">
+                        <div class="card category-item all category2">
                             <figure class="c-i-c">
                                 <img class="c-i" src="./assets/imgs/products/pro-4.jpg" alt="">
                             </figure>
@@ -367,7 +418,7 @@
                                 </ul>
                             </div><!--card-footer-->
                         </div><!--card-->
-                        <div class="card">
+                        <div class="card category-item all category1">
                             <figure class="c-i-c">
                                 <img class="c-i" src="./assets/imgs/products/pro-5.jpg" alt="">
                             </figure>
@@ -402,7 +453,7 @@
                                 </ul>
                             </div><!--card-footer-->
                         </div><!--card-->
-                        <div class="card">
+                        <div class="card category-item all category2">
                             <figure class="c-i-c">
                                 <img class="c-i" src="./assets/imgs/products/pro-6.jpg" alt="">
                             </figure>
@@ -541,11 +592,12 @@
                                         </figure>
                                     </li>
                                 </ul>
-                                <div class="team-search">
-                                    <input type="text" placeholder="Email"><span class="material-symbols-outlined">
+                                <form class="team-search">
+                                    <input type="email" placeholder="Email"><button type="submit"
+                                        class="material-symbols-outlined">
                                         search
-                                    </span>
-                                </div><!--team-search-->
+                                    </button>
+                                </form><!--team-search-->
                             </div><!--team-content-bottom-->
                         </div><!--team-content-->
                         <div class="team-avatar">
